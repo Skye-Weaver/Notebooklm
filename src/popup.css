@@ -2,7 +2,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 12px;
-  min-width: 340px;
+  min-width: 360px;
   background: #f8f9fb;
   color: #1f2933;
 }
@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -38,10 +38,45 @@ button.copy {
   background: #0f766e;
 }
 
+button.danger {
+  background: #dc2626;
+}
+
+button.perplexity {
+  background: #7c3aed;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.tab-button {
+  background: #e2e8f0;
+  color: #1f2933;
+}
+
+.tab-button.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.status {
+  min-height: 18px;
+  font-size: 12px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.status.error {
+  color: #b91c1c;
 }
 
 .card {
