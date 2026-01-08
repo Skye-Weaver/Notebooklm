@@ -1,0 +1,8 @@
+{
+  "name": "notebooklm-source-saver",
+  "version": "1.0.0",
+  "description": "NotebookLM Source Saver extension",
+  "scripts": {
+    "test": "node test/parser.test.js"
+  }
+}

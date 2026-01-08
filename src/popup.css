@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 12px;
+  min-width: 340px;
+  background: #f8f9fb;
+  color: #1f2933;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #475569;
+}
+
+button.copy {
+  background: #0f766e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+}
+
+.card p {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  color: #52606d;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.empty {
+  font-size: 13px;
+  color: #52606d;
+}
