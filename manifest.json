@@ -3,8 +3,8 @@
   "name": "NotebookLM Source Saver",
   "version": "1.0.0",
   "description": "Capture NotebookLM search sources and copy them in convenient formats.",
-  "permissions": ["storage", "clipboardWrite"],
-  "host_permissions": ["https://notebooklm.google.com/*"],
+  "permissions": ["storage", "clipboardWrite", "tabs"],
+  "host_permissions": ["https://notebooklm.google.com/*", "https://www.perplexity.ai/*"],
   "content_scripts": [
     {
       "matches": ["https://notebooklm.google.com/*"],
@@ -16,6 +16,11 @@
       "matches": ["https://notebooklm.google.com/*"],
       "js": ["src/parser.js", "src/content.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.perplexity.ai/spaces/*"],
+      "js": ["src/perplexity.js"],
+      "run_at": "document_idle"
     }
   ],
   "action": {
